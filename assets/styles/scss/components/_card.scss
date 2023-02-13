@@ -1,0 +1,50 @@
+@import '../abstract/media-queries';
+
+.card {
+  box-sizing: border-box;
+  width: calc(100% - 3rem);
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .2);
+  color: var(--neutral-very-dark-blue);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  max-width: $min;
+
+  &--border-cyan {
+    border-top: .25rem solid var(--primary-cyan);
+  }
+  &--border-red {
+    border-top: .25rem solid var(--primary-red);
+  }
+  &--border-orange {
+    border-top: .25rem solid var(--primary-orange);
+  }
+  &--border-blue {
+    border-top: .25rem solid var(--primary-blue);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: .5rem;
+  }
+
+  &__text {
+    font-weight: 200;
+    font-size: .9rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width: 4rem;
+    margin-left: auto;
+  }
+
+  &:last-of-type {
+    margin-bottom: 4rem;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../abstract/media-queries';
+
+.header {
+  box-sizing: border-box;
+  width: calc(100% - 3rem);
+  margin: 4rem auto;
+  color: var(--neutral-very-dark-blue);
+  line-height: 1.5;
+  max-width: $min;
+  
+  &__title {
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-align: center;
+    &--bold{
+      font-weight: 600;
+      display: block;
+    }
+  }
+  
+  &__text {
+    font-weight: 200;
+    text-align: center;
+  }
+}
