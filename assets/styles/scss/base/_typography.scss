@@ -2,10 +2,3 @@
 @import '../abstract/media-queries';
 // font-family: 'Poppins', sans-serif;
 
-html {
-  font-family: 'Poppins', sans-serif;
-  
-  @include media-query($laptop){
-    font-size: 18px;
-  }
-}

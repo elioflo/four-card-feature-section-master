@@ -1,0 +1,15 @@
+@import '../abstract/media-queries';
+
+.container {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--neutral-very-light-gray);
+
+
+  @include media-query($md-screen){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

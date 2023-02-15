@@ -1,8 +1,23 @@
 @import '../abstract/media-queries';
 
 .main {
-  @include media-query($laptop){
+  margin: 0 auto;
+
+  @include media-query($md-screen){
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    gap: 1rem;
+    max-width: $sm;
+    margin-top: 4rem;
+  }
+
+  @include media-query($lg-screen){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    place-items: center;
+    gap: 2rem;
+    max-width: $lg;
   }
 }
