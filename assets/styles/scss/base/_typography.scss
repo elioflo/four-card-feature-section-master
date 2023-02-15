@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import '../abstract/media-queries';
 // font-family: 'Poppins', sans-serif;
 
-body {
+html {
   font-family: 'Poppins', sans-serif;
+  
+  @include media-query($laptop){
+    font-size: 18px;
+  }
 }

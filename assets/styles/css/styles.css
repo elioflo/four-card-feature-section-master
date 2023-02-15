@@ -9,8 +9,13 @@
   --neutral-very-light-gray: hsl(0, 0%, 98%);
 }
 
-body {
+html {
   font-family: "Poppins", sans-serif;
+}
+@media (min-width: 769px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -324,29 +329,11 @@ template {
   display: none;
 }
 
-.main {
-  background-color: var(--main-bg-color);
-  color: var(--main-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  gap: 1rem;
-  min-height: 100vh;
-}
-.main__title {
-  text-transform: capitalize;
-}
-.main__btn {
-  background-color: var(--main-color);
-  border-radius: 0.5rem;
-  border-style: none;
-  color: var(--main-bg-color);
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
+@media (min-width: 769px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .header {
